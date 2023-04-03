@@ -14,7 +14,7 @@
     <? php
         include("Conexion BD.php")
     ?>
-      <form class="formulario" method="post">
+      <form class="formulario" method="post" action="register_action.php">
         <h1>Registrate!</h1>
         <div class="contenedor">
 
