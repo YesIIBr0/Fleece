@@ -11,7 +11,7 @@
     </head>
 
   <body class="form">    
-      <form class="formulario" method="post" action="register_action.php">
+      <form class="formulario" method="post" action="backend/register_action.php">
         <h1>Registrate!</h1>
         <div class="contenedor">
 
