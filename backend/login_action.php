@@ -58,12 +58,12 @@ if (mysqli_num_rows($result) > 0) {
 		exit();
 	} else {
 		// Contraseña incorrecta
-		header("Location: Log In.php?error=campos_incorrectos");
+		header("Location: Login.php?error=campos_incorrectos");
 		exit();
 	}
 } else {
 	// Usuario no encontrado
-	header("Location: Log In.php?error=campos_incorrectos");
+	header("Location: Login.php?error=campos_incorrectos");
 	exit();
 }
 ?>
