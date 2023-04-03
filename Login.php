@@ -26,7 +26,7 @@
         </div >
         <input type="submit" name="enviar" value="Login" class="button">
         <p class="texto">Al registrarte, aceptas las politicas de privacidad y Condiciones de uso</p><br>
-        <p class="texto">No tienes cuenta?<a class="link" href="Registro.html">Registrate</a></p>
+        <p class="texto">No tienes cuenta?<a class="link" href="Registro.php">Registrate</a></p>
 
     </div>
 </form>
