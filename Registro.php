@@ -10,10 +10,7 @@
         <script src="https://kit.fontawesome.com/4cd3ce9734.js" crossorigin="anonymous"></script>
     </head>
 
-  <body class="form">
-    <? php
-        include("Conexion BD.php")
-    ?>
+  <body class="form">    
       <form class="formulario" method="post" action="register_action.php">
         <h1>Registrate!</h1>
         <div class="contenedor">
