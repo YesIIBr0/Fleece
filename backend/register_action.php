@@ -50,7 +50,7 @@ $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$
 
 if (mysqli_query($conn, $sql)) {
 	// Registro exitoso, redirigir al usuario a la pagina de inicio de sesion
-	header("Location: Log In.php");
+	header("Location: Login.php");
 	exit();
 } else {
 	// Error al insertar el usuario en la base de datos
