@@ -1,9 +1,9 @@
 <?php
 // Conexion a la base de datos
-$db_host = "localhost";
-$db_user = "usuario_db";
-$db_password = "contraseña_db";
-$db_name = "nombre_db";
+$db_host = "127.0.0.1";
+$db_user = "root";
+$db_password = "";
+$db_name = "fleecedb";
 $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 if (!$conn) {
