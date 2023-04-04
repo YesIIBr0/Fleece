@@ -1,9 +1,9 @@
 <?php
 // Conexion a la base de datos
-$db_host = "localhost";
-$db_user = "usuario_db";
-$db_password = "contraseña_db";
-$db_name = "nombre_db";
+$db_host = "127.0.0.1";
+$db_user = "root";
+$db_password = "";
+$db_name = "fleecedb";
 $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 if (!$conn) {
@@ -11,25 +11,25 @@ if (!$conn) {
 }
 
 // Recuperar los datos del formulario de inicio de sesion
-$username = mysqli_real_escape_string($conn, $_POST['username']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 //Medidas de seguridad
-if (!preg_match("/^[a-zA-Z0-9]+$/", $username)) {
+//if (!preg_match("/^[a-zA-Z0-9]+$/", $email)) {
     // El nombre de usuario contiene caracteres no permitidos
-    header("Location: Log In.php?error=nombre_de_usuario_invalido");
-    exit();
-}
+  //  header("Location: Login.php?error=nombre_de_usuario_invalido");
+   // exit();
+//}
 
 if (empty($password)) {
     // La contraseña esta vacía
-    header("Location: Log In.php?error=contraseña_vacia");
+    header("Location: Login.php?error=contraseña_vacia");
     exit();
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // El correo electronico no es valido
-    header ("Location: Log In.php?error=correo_invalido");
+    header ("Location: Login.php?error=correo_invalido");
     exit();
 }
 
