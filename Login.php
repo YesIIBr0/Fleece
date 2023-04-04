@@ -17,11 +17,11 @@
 
         <div class="input_contenedor">
         <i class="fa-sharp fa-solid fa-envelope icon"></i> 
-        <input type="text" placeholder="Correo electronico" name="usuario"required> 
+        <input type="text" placeholder="Correo electronico" name="email" required> 
         </div >
         <div class="input_contenedor">
             <i class="fa-solid fa-lock icon"></i>
-        <input type="password" placeholder="Contraseña" name="clave" required> 
+        <input type="password" placeholder="Contraseña" name="password" required> 
         
         </div >
         <input type="submit" name="enviar" value="Login" class="button">
