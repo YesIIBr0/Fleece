@@ -17,20 +17,20 @@
 
         <div class="input_contenedor">
             <i class="fa-solid fa-user icon"></i>
-        <input type="text" placeholder="Nombre Completo" name="usuario" required> 
+        <input type="text" placeholder="Nombre Completo" name="username" required> 
         </div >
         <div class="input_contenedor">
         <i class="fa-sharp fa-solid fa-envelope icon"></i> 
-        <input type="text" placeholder="Correo electronico" name ="correo" required> 
+        <input type="text" placeholder="Correo electronico" name ="email" required> 
         </div >
         <div class="input_contenedor">
             <i class="fa-solid fa-lock icon"></i>
-        <input type="password" placeholder="Contraseña" name ="clave" required> 
+        <input type="password" placeholder="Contraseña" name ="password" required> 
         
         </div >
         <input type="submit" name="enviar" value="Registrate" class="button">
         <p class="texto">Al registrarte, aceptas las politicas de privacidad y Condiciones de uso</p><br>
-        <p class="texto">Ya tienes cuenta?<a class="link" href="Log in.html">Iniciar Sesion</a></p>
+        <p class="texto">Ya tienes cuenta?<a class="link" href="Login.php">Iniciar Sesion</a></p>
 
     </div>
 </form>
