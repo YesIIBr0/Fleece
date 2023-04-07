@@ -20,7 +20,7 @@
                     <ul class="nav__list">
     
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link" >
+                            <a href="index.php" class="nav__link" >
                                 <i class="ri-home-4-line"></i>
                                 <span>Home</span>
                             </a>
