@@ -14,27 +14,20 @@ if (!$conn) {
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-//Medidas de seguridad
-//if (!preg_match("/^[a-zA-Z0-9]+$/", $email)) {
-    // El nombre de usuario contiene caracteres no permitidos
-  //  header("Location: Login.php?error=nombre_de_usuario_invalido");
-   // exit();
-//}
-
 if (empty($password)) {
     // La contraseña esta vacía
-    header("Location: Login.php?error=contraseña_vacia");
+    header("Location: http://localhost/fleece-master/Login.php?error=contraseña_vacia");
     exit();
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // El correo electronico no es valido
-    header ("Location: Login.php?error=correo_invalido");
+    header ("Location: http://localhost/fleece-master/Login.php?error=correo_invalido");
     exit();
 }
 
 // Consulta SQL para buscar el usuario en la base de datos
-$sql = "SELECT * FROM usuarios WHERE username = '$username' OR email = '$username' LIMIT 1";
+$sql = "SELECT * FROM usuarios WHERE username = '$email' OR email = '$email' LIMIT 1";
 $result = mysqli_query($conn, $sql);
 
 // Verificar si se encontro el usuario
@@ -49,21 +42,21 @@ if (mysqli_num_rows($result) > 0) {
 		
 		//Medida de seguridad para que un usuario no inicie sesion luego de haber iniciado una
         if (session_status() === PHP_SESSION_ACTIVE && isset($_SESSION['user_id'])) {
-            header("Location: index.php?error=SesionYaIniciada");
+            header("Location: .../index.php?error=SesionYaIniciada");
             exit();
         }
 
 		$_SESSION['username'] = $user['username'];
-		header("Location: index.php");
+		header("Location: http://localhost/fleece-master/index.php");
 		exit();
 	} else {
 		// Contraseña incorrecta
-		header("Location: Login.php?error=campos_incorrectos");
+		header("Location: http://localhost/fleece-master/Login.php?error=campos_incorrectos");
 		exit();
 	}
 } else {
 	// Usuario no encontrado
-	header("Location: Login.php?error=campos_incorrectos");
+	header("Location: http://localhost/fleece-master/Login.php?error=incorrectos");
 	exit();
 }
 ?>
