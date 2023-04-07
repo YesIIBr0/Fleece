@@ -56,7 +56,7 @@ if (mysqli_num_rows($result) > 0) {
 	}
 } else {
 	// Usuario no encontrado
-	header("Location: http://localhost/fleece-master/Login.php?error=incorrectos");
+	header("Location: http://localhost/fleece-master/Login.php?error=campos_incorrectos");
 	exit();
 }
 ?>
