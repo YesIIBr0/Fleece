@@ -6,6 +6,10 @@ $db_password = "";
 $db_name = "fleecedb";
 $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
+if (!$conn) {
+	die("Conexión fallida: " . mysqli_connect_error());
+}
+
 //Comprobar inicio de sesión
 if (!isset($_SESSION['username'])) {
     header("Location: index.php?error=NotLoggedIn");
