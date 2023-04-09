@@ -8,7 +8,7 @@ $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 //Comprobar inicio de sesión
 if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
+    header("Location: index.php?error=NotLoggedIn");
     exit();
 }
 
