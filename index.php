@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <script type="text/javascript" src="assets/js/shopping_cart.js"></script>
         <title>Fleece</title>
     </head>
     <body>
@@ -134,7 +134,7 @@
                                 </h2>
                                 <span class="products__price">$124.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product1.png', 'Gotland black Jacket', 124.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
 
 
@@ -146,7 +146,7 @@
                                 </h2>
                                 <span class="products__price">$34.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product2.png', 'Black Sports Shorts', 34.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
 
 
@@ -158,7 +158,7 @@
                                 </h2>
                                 <span class="products__price">$97.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product3.png', 'Knox Quilted Jacket', 97.99">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
 
 
@@ -170,7 +170,7 @@
                                 </h2>
                                 <span class="products__price">$94.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product5.png', 'Plain Long Sleeve T Shirt', 94.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
 
 
@@ -182,7 +182,7 @@
                                 </h2>
                                 <span class="products__price">$99.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product6.png', 'Japanese Original Lucky Cat T-Shirt', 99.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
 
 
@@ -194,7 +194,7 @@
                                 </h2>
                                 <span class="products__price">$69.99</span>
                             </div>
-                            <a href="#" class="button__link">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/product4.png', 'Blue Sport Pants', 69.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
                     </div>
 

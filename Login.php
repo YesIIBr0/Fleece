@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
         <script src="https://kit.fontawesome.com/4cd3ce9734.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/shopping_cart.js"></script>
     </head>
 
   <body class="form">
