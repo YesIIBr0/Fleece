@@ -12,7 +12,7 @@ if (!$conn) {
 
 //Comprobar inicio de sesión
 if (!isset($_SESSION['username'])) {
-    header("Location: index.php?error=NotLoggedIn");
+    header("Location: http://localhost/fleece-master/index.php?error=NotLoggedIn");
     exit();
 }
 
