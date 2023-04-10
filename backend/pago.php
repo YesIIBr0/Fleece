@@ -1,6 +1,5 @@
 <?php
 // Establecemos la conexión a la base de datos
-session_start();
 $db_host = "127.0.0.1";
 $db_user = "root";
 $db_password = "";
@@ -9,12 +8,6 @@ $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 if (!$conn) {
 	die("Conexión fallida: " . mysqli_connect_error());
-}
-
-//Comprobar inicio de sesión
-if (!isset($_SESSION['username'])) {
-    header("Location: http://localhost/fleece-master/index.php?error=notLoggedIn");
-    exit();
 }
 
 session_start(); // Inicia la sesión
@@ -26,11 +19,18 @@ if(isset($_SESSION['cart'])) {
 }
 
 foreach($carrito as $producto) {
-    $id_producto = $producto['id'];
-    $cantidad = $producto['cantidad'];
+    $id = $producto['id_producto'];
+    $cantidad = $producto['unidades'];
     
     // Actualiza la cantidad del producto en la base de datos
-    $sql = "UPDATE productos SET cantidad = cantidad - $cantidad WHERE id = $id_producto";
-    mysqli_query($conexion, $sql);
+    $sql = "UPDATE productos SET unidades = unidades - $cantidad WHERE id_producto = $id";
+    mysqli_query($conn, $sql);
 }
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Se ha descontado de la base de datos");'; 
+echo 'window.location.href = "http://localhost/fleece-master/Buy_now.php";';
+echo '</script>';
+unset($_SESSION['cart'][$id]);
+exit();
 ?>

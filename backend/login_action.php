@@ -1,3 +1,4 @@
+
 <?php
 // Conexion a la base de datos
 $db_host = "127.0.0.1";
@@ -47,6 +48,7 @@ if (mysqli_num_rows($result) > 0) {
         }
 
 		$_SESSION['username'] = $user['username'];
+		
 		header("Location: http://localhost/fleece-master/index.php");
 		exit();
 	} else {

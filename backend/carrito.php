@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $db_host = "127.0.0.1";
@@ -12,7 +13,10 @@ if (!$conn) {
 
 //Comprobar inicio de sesión
 if (!isset($_SESSION['username'])) {
-    header("Location: http://localhost/fleece-master/index.php?error=NotLoggedIn");
+    echo '<script type="text/javascript">'; 
+    echo 'alert("You have to log in to add to cart");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Buy_now.php";';
+    echo '</script>';
     exit();
 }
 
@@ -40,7 +44,10 @@ if(isset($_POST['add_to_cart'])) {
             $_SESSION['cart'][$row['id_producto']] = $row;
         } else {
             // Producto no encontrado en la base de datos (ARREGLAR)
-            header("Location: #productos?error=product_not_found");
+            echo '<script type="text/javascript">'; 
+            echo 'alert("WEO HAY PROBLEMAAAA");'; 
+            echo 'window.location.href = "http://localhost/fleece-master/Buy_now.php";';
+            echo '</script>';
             exit();
         }
     }
@@ -54,15 +61,15 @@ if(isset($_POST['remove_cart'])) {
 // Eliminar producto del carrito
 if(isset($_POST['remove_from_cart'])) {
     $id = $_POST['id_producto'];
-    unset($_SESSION['id_carrito'][$id]);
+    unset($_SESSION['cart'][$id]);
 }
 
 // Actualizar cantidad de un producto en el carrito
 if(isset($_POST['update_cart'])) {
-    $cart = $_POST['id_carrito'];
+    $cart = $_SESSION['cart'];
     foreach($cart as $id => $quantity) {
-        if(isset($_SESSION['id_carrito'][$id])) {
-            $_SESSION['id_carrito'][$id]['unidades'] = $quantity;
+        if(isset($_SESSION['cart'][$id])) {
+            $_SESSION['cart'][$id]['unidades'] = $quantity;
         }
     }
 }
@@ -97,6 +104,7 @@ if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
         echo '<form method="post">';
         echo '<input type="hidden" name="id" value="' . $id . '">';
         echo '<button type="submit" name="remove_from_cart">Eliminar</button>';
+        echo '<button type="submit" name="remove_cart">Eliminar Carro</button>';
         echo '</form>';
         echo '</td>';
         echo '</tr>';
@@ -104,12 +112,11 @@ if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
     echo '<tr>';
     echo '<td colspan="3">Total:</td>';
     echo '<td>$' . number_format($total, 2) . '</td>';    
-    echo '</tr>';
-    mysqli_close($conn);
+    echo '</tr>';    
     echo '</table>';
 
-    // Mostramos el botón para proceder al pago
-    echo '<form action="checkout.php" method="post">';
+    // Mostramos el botón para proceder al pago    
+    echo '<form action="pago.php" method="post">';
     echo '<input type="hidden" name="total" value="' . $total . '">';
     echo '<input type="submit" value="Proceder al pago">';
     echo '</form>';
