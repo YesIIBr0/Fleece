@@ -13,7 +13,7 @@
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="index.html" class="nav__logo">
+                <a href="index.php" class="nav__logo">
                     Urban Fleece <i class="ri-store-line"></i>
                 </a>
                 <div class="nav__menu" id="nav-menu ">
@@ -23,6 +23,16 @@
                                 <i class="ri-home-4-line"></i>
                                 <span>Home</span>
                             </a>
+                        </li>
+
+                        <li class="nav__item" id = "sesion">
+                            <a href="Login.php" class="nav__link active-link" >
+                                <i class="ri-home-4-line"></i>
+                                <span>Perfil</span>
+                            </a>
+                            <ul class="submenu">
+                            <li><a href="">Close sesion</a>
+                            </ul>
                         </li>
 
                         <li class="nav__item">
@@ -39,11 +49,17 @@
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" id="productos">
                             <a href="#products" class="nav__link">
                                 <i class="ri-shopping-bag-3-line"></i>
                                 <span>Products</span>
                             </a>
+                             <ul class="submenu">
+                            <li><a href="Hoodies.php">Hoodies</a></li>
+                            <li><a href="Pants.php">Pants</a></li>
+                            <li><a href="TShirts.php">T-shirts & more</a></li>
+                            <li><a href="Buy now.php">All products</a></li>
+                            </ul>
                         </li>
                        
                     </ul>
@@ -92,7 +108,7 @@
     
     
                         <article class="products__card swiper-slide">
-                            <img src="assets/img/WC_AdidasC2.webp" alt="product image" class="products__img">
+                            <img src="assets/img/WC_Adidasj1.webp" alt="product image" class="products__img">
                             <div class="products__data">
                                 <h2 class="products__title">
                                   ESSENTIALS INSULATED HOODED JACKET
@@ -100,7 +116,7 @@
                                 </h2>
                                 <span class="products__price">$90.00</span>
                             </div>
-                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC2.webp', 'ESSENTIALS INSULATED HOODED JACKET', 90.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasj1.webp', 'ESSENTIALS INSULATED HOODED JACKET', 90.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
                         </article>
     
     
@@ -339,17 +355,6 @@
                         </div>
                         <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Pumap.webp', 'STUDIO PLASTIC FREE MENS TRAINING JOGGER', 44.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                     </article>
-                    
-                    <article class="products__card swiper-slide">
-                        <img src="assets/img/WC_Pumap2.webp" alt="product image" class="products__img">
-                        <div class="products__data">
-                            <h2 class="products__title">
-                            INDIVIDUALLIGA WOMEN'S SOCCER PANTS
-                            </h2>
-                            <span class="products__price">$34.99</span>
-                        </div>
-                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Pumap2.webp', 'INDIVIDUALLIGA WOMENS SOCCER PANTS', 34.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
-                    </article>
 
                     <article class="products__card swiper-slide">
                         <img src="assets/img/WC_Pumaj.webp" alt="product image" class="products__img">
@@ -538,17 +543,6 @@
                         </div>
                         <a href="#" class="button__link" onclick="AddItem('assets/img/WC_PumaS2.webp', 'LUXE SPORT OVERSIZED V-NECK SWEATSHIRT', 60.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
                     </article>
-
-                    <article class="products__card swiper-slide">
-                        <img src="assets/img/womenp15.webp" alt="product image" class="products__img">
-                        <div class="products__data">
-                            <h2 class="products__title">
-                                REEBOK VAGE HOODIE
-                            </h2>
-                            <span class="products__price">$80.99</span>
-                        </div>
-                        <a href="#" class="button__link" onclick="AddItem('assets/img/womenp15.webp', 'REEBOK VAGE HOODIE', 80.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
-                    </article>
                 
                     <article class="products__card swiper-slide">
                         <img src="assets/img/WC_PumaS3.webp" alt="product image" class="products__img">
@@ -602,7 +596,6 @@
                         </div>
                         <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC3.jpg', 'Melbourne Ternnis Woven Jacket', 120.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
                     </article>
-
 
                     <article class="products__card swiper-slide">
                         <img src="assets/img/WC_Nikec.webp" alt="product image" class="products__img">

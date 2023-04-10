@@ -25,11 +25,15 @@
                                 <span>Home</span>
                             </a>
                         </li>
-                         <li class="nav__item">
+                        <li class="nav__item" id="sesion">
                             <a href="Login.php" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Perfil</span>
                             </a>
+                            <ul class="submenu">
+                            <li><a href="">Close sesion</a>
+                            </ul>
+                        </li>
                         </li>
 
                         <li class="nav__item">
@@ -45,12 +49,18 @@
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" id="productos">
                             <a href="#products" class="nav__link">
                                 <i class="ri-shopping-bag-3-line"></i>
                                 <span>Products</span>
                             </a>
-                        </li>
+                            <ul class="submenu">
+                            <li><a href="Hoodies.php">Hoodies</a></li>
+                            <li><a href="Pants.php">Pants</a></li>
+                            <li><a href="TShirts.php">T-shirts & more</a></li>
+                            <li><a href="Buy now.php">All products</a></li>
+                            </ul>
+                        </li>    
                        
                     </ul>
                 </div>
@@ -66,7 +76,7 @@
             <div class="contenedor2">
           <strong align="middle"><font size ="10" color ="white">Urban <br> Fleece Styles!</strong></font>
             </div>
-            <button class="button-54" role="button">Buy now!</button>
+             <button class="button-54" role="button" onclick="location.href='Buy now.php'">Buy now!</button>
             </center>
            
         </section>
