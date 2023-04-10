@@ -19,13 +19,13 @@
                 <div class="nav__menu" id="nav-menu ">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="Buy now.php" class="nav__link active-link" >
+                            <a href="Buy now.php" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Home</span>
                             </a>
                         </li>
                          <li class="nav__item" id = "sesion">
-                            <a href="Login.php" class="nav__link active-link" >
+                            <a href="Login.php" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Perfil</span>
                             </a>

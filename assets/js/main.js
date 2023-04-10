@@ -124,3 +124,4 @@ sr.reveal('.footer__container')
 sr.reveal('.collection__explore:nth-child(1)', {origin: 'right'})
 
 sr.reveal('.collection__explore:nth-child(2)', {origin: 'left'})
+

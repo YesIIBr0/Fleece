@@ -14,16 +14,26 @@
     <body onload="displayCart()">
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="index.html" class="nav__logo">
+                <a href="index.php" class="nav__logo">
                     Urban Fleece <i class="ri-store-line"></i>
                 </a>
                 <div class="nav__menu" id="nav-menu ">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link" >
+                            <a href="#home" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Home</span>
                             </a>
+                        </li>
+
+                        <li class="nav__item" id = "sesion">
+                            <a href="Login.php" class="nav__link " >
+                                <i class="ri-home-4-line"></i>
+                                <span>Perfil</span>
+                            </a>
+                            <ul class="submenu">
+                            <li><a href="">Close sesion</a>
+                            </ul>
                         </li>
 
                         <li class="nav__item">
@@ -40,13 +50,24 @@
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" id="productos">
                             <a href="#products" class="nav__link">
                                 <i class="ri-shopping-bag-3-line"></i>
-                                <span>Products</span>
-                            </a>
+                                <span>Products</span> </a>
+                            
+                            <ul class="submenu">
+                            <li><a href="Hoodies.php">Hoodies</a></li>
+                            <li><a href="Pants.php">Pants</a></li>
+                            <li><a href="TShirts.php">T-shirts & more</a></li>
+                            <li><a href="Buy now.php">All products</a></li>
+                            </ul>
+                            
                         </li>
-                       
+                        <li class="nav__item">
+                            <a  href="shopping_cart.html">
+                            <i id="cart_tag"  class="ri-shopping-bag-3-line"></i>
+                        </a>
+                        </li>
                     </ul>
                 </div>
                 <i class="ri-moon-line" id="theme-button"></i>
@@ -69,6 +90,7 @@
 				  <hr>
 				  
 				</div>
+                <button class="button-29" onclick="clearCart()">Clear Cart</button>
 			  </div>
 			</div>
 				<button class="button-28" onclick="window.location.href='Checkout_page.html'"; role="button">Checkout!</button>

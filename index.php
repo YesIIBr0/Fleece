@@ -62,6 +62,12 @@
                             </ul>
                         </li>    
                        
+                        <li class="nav__item">
+                            <a  href="shopping_cart.html">
+                            <i id="cart_tag"  class="ri-shopping-bag-3-line"></i>
+                        </a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <i class="ri-moon-line" id="theme-button"></i>

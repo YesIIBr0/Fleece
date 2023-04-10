@@ -19,13 +19,13 @@
                 <div class="nav__menu" id="nav-menu ">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="Hoodies.php" class="nav__link active-link" >
+                            <a href="Hoodies.php" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Home</span>
                             </a>
                         </li>
                          <li class="nav__item">
-                            <a href="Login.php" class="nav__link active-link" >
+                            <a href="Login.php" class="nav__link " >
                                 <i class="ri-home-4-line"></i>
                                 <span>Perfil</span>
                             </a></font>
@@ -42,7 +42,12 @@
                             <li><a href="TShirts.php">T-shirts & more</a></li>
                             <li><a href="Buy now.php">All products</a></li>
                                 </ul>
-                        </li>    
+                        </li> 
+                        <li class="nav__item">
+                            <a  href="shopping_cart.html">
+                            <i id="cart_tag"  class="ri-shopping-bag-3-line"></i>
+                        </a>
+                        </li>   
                     </ul> 
                        
                     </ul>
