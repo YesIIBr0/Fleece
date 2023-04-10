@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="assets/js/shopping_cart.js"></script>
 
         <title>Products</title>
     </head>
@@ -46,6 +47,12 @@
                             <li><a href="Buy now.php">All products</a></li>
                             </ul>
                         </li>    
+                     <li class="nav__item">
+                            <a  href="shopping_cart.html">
+                            <i id="cart_tag"  class="ri-shopping-bag-3-line"></i>
+                        </a>
+                        </li>
+
                     </ul> 
                        
                     </ul>
@@ -70,7 +77,11 @@
                             </h2>
                             <span class="products__price">$39.99</span>
                         </div>
-                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp16.webp', 'Reebok Blue Tank Top Shirt', 39.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        <form action="backend/carrito.php" method="post">
+                            <input type="hidden" name="id_producto" value="5">
+                            <input type="hidden" name="unidades" value="1">                                                        
+                            <input type="submit" name="add_to_cart" value="Add to cart" class="button-54" target="_blank" onclick="AddItem('assets/img/menp16.webp', 'Reebok Blue Tank Top Shirt', 39.99)">
+                        </form>   
                     </article>
 
                     <article class="products__card swiper-slide">
