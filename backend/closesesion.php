@@ -20,6 +20,7 @@ if (!isset($_SESSION['username'])) {
 }
 else
 {
+    unset($_SESSION['username']);
     echo '<script type="text/javascript">'; 
     echo 'alert("Sesion closed.");'; 
     echo 'window.location.href = "http://localhost/fleece-master/index.php";';
