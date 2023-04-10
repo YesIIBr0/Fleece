@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 $db_host = "127.0.0.1";
@@ -14,7 +13,7 @@ if (!$conn) {
 if (!isset($_SESSION['username'])) {
     echo '<script type="text/javascript">'; 
     echo 'alert("No Sesion to close.");'; 
-    echo 'window.location.href = "http://localhost/fleece-master/index.php";';
+    echo 'window.location.href ="http://localhost/fleece-master/index.php";';
     echo '</script>';
     exit();
 }
@@ -23,7 +22,7 @@ else
     unset($_SESSION['username']);
     echo '<script type="text/javascript">'; 
     echo 'alert("Sesion closed.");'; 
-    echo 'window.location.href = "http://localhost/fleece-master/index.php";';
+    echo 'window.location.href ="http://localhost/fleece-master/index.php";';
     echo '</script>';
     exit();
 }

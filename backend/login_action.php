@@ -17,13 +17,19 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 if (empty($password)) {
     // La contraseña esta vacía
-    header("Location: http://localhost/fleece-master/Login.php?error=contraseña_vacia");
+   echo '<script type="text/javascript">'; 
+    echo 'alert("Usuario o contraseña incorrecta");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Login.php";';
+    echo '</script>';
     exit();
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // El correo electronico no es valido
-    header ("Location: http://localhost/fleece-master/Login.php?error=correo_invalido");
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Usuario o contraseña incorrecta");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Login.php";';
+    echo '</script>';
     exit();
 }
 
@@ -49,16 +55,25 @@ if (mysqli_num_rows($result) > 0) {
 
 		$_SESSION['username'] = $user['username'];
 		
-		header("Location: http://localhost/fleece-master/index.php");
+	echo '<script type="text/javascript">'; 
+    echo 'alert("Inicio de sesion correcto, bienvenido!");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/index.php";';
+    echo '</script>';
 		exit();
 	} else {
-		// Contraseña incorrecta
-		header("Location: http://localhost/fleece-master/Login.php?error=campos_incorrectos");
+	echo '<script type="text/javascript">'; 
+    echo 'alert("Usuario o contraseña incorrecta");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Login.php";';
+    echo '</script>';
+		;
 		exit();
 	}
 } else {
 	// Usuario no encontrado
-	header("Location: http://localhost/fleece-master/Login.php?error=campos_incorrectos");
+	echo '<script type="text/javascript">'; 
+    echo 'alert("Usuario o contraseña incorrecta");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Login.php";';
+    echo '</script>';
 	exit();
 }
 ?>

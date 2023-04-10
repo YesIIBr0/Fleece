@@ -51,7 +51,11 @@ $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$
 
 if (mysqli_query($conn, $sql)) {
 	// Registro exitoso, redirigir al usuario a la pagina de inicio de sesion
-	header("Location: http://localhost/fleece-master/Login.php?Registro_exitoso");
+	echo '<script type="text/javascript">'; 
+    echo 'alert("Cuenta creada!");'; 
+    echo 'window.location.href = "http://localhost/fleece-master/Login.php";';
+    echo '</script>';
+   
 	exit();
 } else {
 	// Error al insertar el usuario en la base de datos
