@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="assets/js/shopping_cart.js"></script>
+        <title>Fleece</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.php" class="nav__logo">
+                    Urban Fleece <i class="ri-store-line"></i>
+                </a>
+
+                <div class="nav__menu" id="nav-menu ">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+
+                            <a href="#home" class="nav__link " >
+                                <i class="ri-home-4-line"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item" id="sesion">
+
+                            <a href="Login.php" class="nav__link " >
+                                <i class="ri-home-4-line"></i>
+                                <span>Perfil</span>
+                            </a>
+                            <ul class="submenu">
+                            <li><a href="">Close sesion</a>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">
+                                <i class="ri-price-tag-3-line"></i>
+                                <span>New</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">
+                                <i class="ri-compass-3-line"></i>
+                                <span>Collection</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item" id="productos">
+                            <a href="#products" class="nav__link ">
+                                <i class="ri-shopping-bag-3-line"></i>
+                                <span>Products</span>
+                            </a>
+                             <ul class="submenu">
+                            <li><a href="Hoodies.php">Hoodies</a></li>
+                            <li><a href="Pants.php">Pants</a></li>
+                            <li><a href="TShirts.php">T-shirts & more</a></li>
+                            <li><a href="Buy now.php">All products</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item">
+                            <a  href="shopping_cart.html">
+                            <i id="cart_tag"  class="ri-shopping-bag-3-line"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="ri-moon-line" id="theme-button"></i>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            New Men Clothing <br>
+                            Collection
+                        </h1>
+                        <p class="home__description">
+                            The new collection of clothing from <br>
+                            the best brands this year.
+                        </p>
+                        <a href="#new" class="button__link">
+                            EXPLORE <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                    <div class="home__images">
+                        <img src="assets/img/new1.png" alt="home image">
+                        <img src="assets/img/new2.png" alt="home image">
+                    </div>
+            </section>
+            <section class="products section" id="products">
+                <h2 class="section__title">
+                    Best Products
+                </h2>
+                <div class="products__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_AdidasC.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    ESSENTIALS DOWN PARKA#M
+                                </h2>
+                                <span class="products__price">$96.00</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC.webp', 'ESSENTIALS DOWN PARKA #M', 96.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_Adidasj1.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                  ESSENTIALS INSULATED HOODED JACKET #M
+    
+                                </h2>
+                                <span class="products__price">$90.00</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasj1.webp', 'ESSENTIALS INSULATED HOODED JACKET #M', 90.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_AdidasC3.jpg" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    MELBOURNE TENNIS STRETCH WOVEN REVERSIBLE JACKET #M
+                                </h2>
+                                <span class="products__price">$120.00</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC3.jpg', 'MELBOURNE TENNIS STRETCH WOVEN REVERSIBLE JACKET #M', 120.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_Nikec.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    NIKE LeBron #M
+                                </h2>
+                                <span class="products__price">$152.97</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikec.webp', 'NIKE LeBron #M', 152.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_Nikec2.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    NIKE SPORTSWEAR THERMA-FIT #M
+                                </h2>
+                                <span class="products__price">$155.00</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikec2.webp', 'NIKE SPORTSWEAR THERMA-FIT #M', 155.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_Nikej.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    NIKE THERMA-FIT REPEL #M
+                                </h2>
+                                <span class="products__price">$89.97</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikej.webp', 'NIKE THERMA-FIT REPEL #M', 89.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+    
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/WC_Reebokp.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    TRAINING ESSENTIALS WOVEN UNLINED PANTS #M
+                                </h2>
+                                <span class="products__price">$34.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Reebokp.webp', 'TRAINING ESSENTIALS WOVEN UNLINED PANTS #M', 34.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/men21.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Puma Tank Top Hoodie #L
+                                </h2>
+                                <span class="products__price">$54.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/men21.webp', 'Puma Tank Top Hoodie #L', 54.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/menp1.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Nike Black Hoodie #L
+                                </h2>
+                                <span class="products__price">$70.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/menp1.webp', 'Nike Black Hoodie #L', 70.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/menp3.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Blue Nike Hoodie #L
+                                </h2>
+                                <span class="products__price">$40.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/menp3.webp', 'Blue Nike Hoodie #L', 40.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/menp5.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Adidas Black/White Line Hoodie #L
+                                </h2>
+                                <span class="products__price">$56.99</span>
+                            </div> 
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/menp5.webp', 'Adidas Black/White Line Hoodie #L', 56.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/menp4.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Black Adidas three line long Tee #L
+                                </h2>
+                                <span class="products__price">$99.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/menp4.webp', 'Black Adidas three line long Tee #L', 99.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+
+                        <article class="products__card swiper-slide">
+                            <img src="assets/img/menp7.webp" alt="product image" class="products__img">
+                            <div class="products__data">
+                                <h2 class="products__title">
+                                    Nike Joggers Black #L
+                                </h2>
+                                <span class="products__price">$32.99</span>
+                            </div>
+                            <a href="#" class="button__link" onclick="AddItem('assets/img/menp7.webp', 'Nike Joggers Black #L', 32.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+
+                </div>
+                
+            </section>
+            <section class="new section" id="new">
+                <h2 class="section__title">
+                    New Collections for Males
+                </h2>
+                <div class="new__container container grid">
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Adidasp1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                ADICOLOR SST SPORTS TRACK PANTS #L
+                            </h2>
+                            <span class="products__price">$45.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasp1.webp', 'ADICOLOR SST SPORTS TRACK PANTS #L', 45.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Adidasp2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                              ALPHASTRENGTH WOVEN ZIP PANTS #L
+                            </h2>
+                            <span class="products__price">$45.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasp2.webp', 'ALPHASTRENGTH WOVEN ZIP PANTS #L', 45.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Adidasj1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                ESSENTIALS INSULATED HOODED JACKET #L
+                            </h2>
+                            <span class="products__price">$89.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasj1.webp', 'ESSENTIALS INSULATED HOODED JACKET #L', 89.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikep2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE PANTS SPORTSWEAR CLUB FLEECE #L
+                            </h2>
+                            <span class="products__price">$55.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikep2.webp', 'NIKE PANTS SPORTSWEAR CLUB FLEECE #L', 55.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikej.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE THERMA-FIT REPEL #L
+                            </h2>
+                            <span class="products__price">$89.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikej.webp', 'NIKE THERMA-FIT REPEL #L', 89.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Reebokp.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                TRAINING ESSENTIALS WOVEN UNLINED PANTS #M
+                            </h2>
+                            <span class="products__price">$34.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Reebokp.webp', 'TRAINING ESSENTIALS WOVEN UNLINED PANTS #M', 34.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Reebokj.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                OUTERWEAR URBAN DOWN PARKA #M
+                            </h2>
+                            <span class="products__price">$80.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Reebokj.webp', 'OUTERWEAR URBAN DOWN PARKA #M', 80.9)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Pumap.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                STUDIO PLASTIC FREE MEN'S TRAINING JOGGER #M
+                            </h2>
+                            <span class="products__price">$44.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Pumap.webp', 'STUDIO PLASTIC FREE MENS TRAINING JOGGER #M', 44.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Pumaj.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                SEASONS DOWN MEN'S RUNNING JACKET #M
+                            </h2>
+                            <span class="products__price">$160.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Pumaj.webp', 'SEASONS DOWN MENS RUNNING JACKET #M', 160.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Adidasp3.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                               ADIDAS CARGO PANTS #M
+                            </h2>
+                            <span class="products__price">$66.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasp3.webp', 'ADIDAS CARGO PANTS #M', 66.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikep3.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE THERMA PANTS #M
+                            </h2>
+                            <span class="products__price">$52.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikep3.webp', 'NIKE THERMA PANTS #M', 52.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+           
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikep4.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE DRY PANTS #M
+                            </h2>
+                            <span class="products__price">$57.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikep4.webp', 'NIKE DRY PANTS #M', 57.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikep5.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                JORDAN FLIGHT MVP #M
+                            </h2>
+                            <span class="products__price">$59.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikep5.webp', 'JORDAN FLIGHT MVP #M', 59.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Adidasj2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                ADIDAS TERREX MULTI HYBRID INSULATED JACKET #S
+                            </h2>
+                            <span class="products__price">$130.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Adidasj2.webp', 'ADIDAS TERREX MULTI HYBRID INSULATED JACKET #S', 130.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_AdidasH1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                TRAINING FULL-ZIP HOODIE #S
+                            </h2>
+                            <span class="products__price">$56.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasH1.webp', 'TRAINING FULL-ZIP HOODIE #S', 56.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_AdidasS1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                ADICOLOR HALF-ZIP SWEATSHIRT #S
+                            </h2>
+                            <span class="products__price">$45.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasS1.webp', 'ADICOLOR HALF-ZIP SWEATSHIRT #S', 45.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_AdidasH2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                CREW SWEATSHIRT SET #S
+                            </h2>
+                            <span class="products__price">$45.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasH2.webp', 'CREW SWEATSHIRT SET #S', 45.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_NikeH1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE SPORTSWEAR CLUB FLEECE #S
+                            </h2>
+                            <span class="products__price">$59.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_NikeH1.webp', 'NIKE SPORTSWEAR CLUB FLEECE #S', 59.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_NikeS1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                SYRACUSE CLUB FLEECE #S
+                            </h2>
+                            <span class="products__price">$67.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_NikeS1.webp', 'SYRACUSE CLUB FLEECE #S', 67.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_ReebokH1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                REEBOK YARD LOVE HOODIE #S
+                            </h2>
+                            <span class="products__price">$30.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_ReebokH1.webp', 'REEBOK YARD LOVE HOODIE #S', 30.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_ReebokS1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                REEBOK LNY CREW SWEATSHIRT #S
+                            </h2>
+                            <span class="products__price">$30.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_ReebokS1.webp', 'REEBOK LNY CREW SWEATSHIRTNIKE SPORTSWEAR THERMA-FIT #S', 30.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_ReebokH2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                REEBOK HOODIE BLACK NIGHT #L
+                            </h2>
+                            <span class="products__price">$49.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_ReebokH2.webp', 'REEBOK HOODIE BLACK NIGHT #L', 49.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_PumaH1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                PUMA NYC HOODIE #L
+                            </h2>
+                            <span class="products__price">$60.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_PumaH1.webp', 'PUMA NYC HOODIE #L', 60.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_PumaS1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                CLASSICS GEN PUMA CREW NECK MEN'S SWEATSHIRT #L
+                            </h2>
+                            <span class="products__price">$60.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_PumaS1.webp', 'CLASSICS GEN PUMA CREW NECK MENS SWEATSHIRT #L', 60.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_PumaS2.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                LUXE SPORT OVERSIZED V-NECK SWEATSHIRT #L
+                            </h2>
+                            <span class="products__price">$60.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_PumaS2.webp', 'LUXE SPORT OVERSIZED V-NECK SWEATSHIRT #L', 60.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_PumaS3.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                PUMA CLASSICS TOWELLING CREW SWEATSHIRT #L
+                            </h2>
+                            <span class="products__price">$30.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_PumaS3.webp', 'PUMA CLASSICS TOWELLING CREW SWEATSHIRT #L', 30.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_NikeH3.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE SPORTSWEAR CLUB FLEECE #L  
+                            </h2>
+                            <span class="products__price">$55.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_NikeH3.webp', 'NIKE SPORTSWEAR CLUB FLEECE #L', 55.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_NikeH4.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                NIKE DRI-FIT #L 
+                            </h2>
+                            <span class="products__price">$63.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_NikeH4.webp', 'NIKE DRI-FIT #L ', 63.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                     <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_AdidasC.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Essentials Down Parka #L
+                            </h2>
+                            <span class="products__price">$96.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC.webp', 'Essentials Down Parka #L', 96.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_AdidasC3.jpg" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Melbourne Ternnis Woven Jacket #L
+                            </h2>
+                            <span class="products__price">$120.00</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_AdidasC3.jpg', 'Melbourne Ternnis Woven Jacket #L', 120.00)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikec.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Nike Lebron Jack Suit #L
+                            </h2>
+                            <span class="products__price">$152.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikec.webp', 'Nike Lebron Jack Suit #L', 152.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Nikej.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Nike Therma Fit Repel #L
+                            </h2>
+                            <span class="products__price">$89.97</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Nikej.webp', 'Nike Therma Fit Repel #L', 89.97)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/WC_Reebokp.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Training Essentials Woven Unlined Pants #L
+                            </h2>
+                            <span class="products__price">$34.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/WC_Reebokp.webp', 'Training Essentials Woven Unlined Pants #L', 34.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/men21.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Puma Tank Top Hoodie #L
+                            </h2>
+                            <span class="products__price">$54.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/men21.webp', 'Puma Tank Top Hoodie #L', 54.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp1.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Nike Black Hoodie #L
+                            </h2>
+                            <span class="products__price">$70.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp1.webp', 'Nike Black Hoodie #L', 70.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp3.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Blue Nike Hoodie #L 
+                            </h2>
+                            <span class="products__price">$40.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp3.webp', 'Blue Nike Hoodie #L ', 40.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp5.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Adidas Black/White Line Hoodie #L
+                            </h2>
+                            <span class="products__price">$56.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp5.webp', 'Adidas Black/White Line Hoodie #L', 56.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp4.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Black Adidas three line long Tee #L
+                            </h2>
+                            <span class="products__price">$99.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp4.webp', 'Black Adidas three line long Tee #L', 99.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp7.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Nike Joggers Black #L
+                            </h2>
+                            <span class="products__price">$32.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp7.webp', 'Nike Joggers Black #L', 32.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp8.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Black Navy Joggers Adidas #L
+                            </h2>
+                            <span class="products__price">$30.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp8.webp', 'Black Navy Joggers Adidas #L', 30.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp9.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Nike Sport Pant#L
+                                 <Menu></Menu>
+                            </h2>
+                            <span class="products__price">$20.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp9.webp', 'Nike Sport Pant #L', 20.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp10.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Adidas Green Tee Joggers #L
+                            </h2>
+                            <span class="products__price">$29.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp10.webp', 'Adidas Green Tee Joggers #L', 29.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp11.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Chromatic Reebok Joggers #L
+                            </h2>
+                            <span class="products__price">$20.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp11.webp', 'Chromatic Reebok Joggers #L', 20.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp12.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Adidas Blue Marine pants #L
+                            </h2>
+                            <span class="products__price">$60.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp12.webp', 'Adidas Blue Marine pants #L', 60.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp13.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok Men Shorts #L
+                            </h2>
+                            <span class="products__price">$20.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp13.webp', 'Reebok Men Shorts #L', 20.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp14.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok Blue Short Shorts for Men #L
+                            </h2>
+                            <span class="products__price">$60.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp14.webp', 'Reebok Blue Short Shorts for Men #L', 60.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp15.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok Unisex Sport Fleeces #M   
+                            </h2>
+                            <span class="products__price">$80.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp15.webp', 'Reebok Unisex Sport Fleeces #M ', 80.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp16.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok Blue Tank Top Shirt #M  
+                            </h2>
+                            <span class="products__price">$39.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp16.webp', 'Reebok Blue Tank Top Shirt #M ', 39.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/menp20.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok Blue Fleece Plus #M    
+                            </h2>
+                            <span class="products__price">$60.99</span>
+                        </div>
+                        <a href="#" class="button__link" onclick="AddItem('assets/img/menp20.webp', 'Reebok Blue Fleece Plus #M', 60.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/womenp20.webp" alt="product image" class="products__img">
+                        <div class="products__data">
+                            <h2 class="products__title">
+                                Reebok 6 pairs Socks Unisex #M   
+                            </h2> 
+                            <span class="products__price">$19.99</span>
+                        </div>
+                        <a href="" class="button__link" onclick="AddItem('assets/img/womenp20.webp', 'Reebok 6 pairs Socks Unisex #M ', 19.99)">Add to cart <i class="ri-arrow-right-line"></i></a>
+                    </article>
+                
+                </div>
+
+                </div>
+            </section>
+
+            <section class="brand section">
+                <h2 class="section__title">
+                    Brands We Sell
+                </h2>
+                <div class="brand__container container grid">
+                    <img src="assets/img/logo1.png" alt="brand image" class="brand__img">
+                    <img src="assets/img/logo2.png" alt="brand image" class="brand__img">
+                    <img src="assets/img/logo3.png" alt="brand image" class="brand__img">
+                    <img src="assets/img/logo4.png" alt="brand image" class="brand__img">
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    Fleece
+                </a>
+                <p class="footer__description">
+                    Committed to bringing you the <br> 
+                    best clothing from popular <br>
+                    brands.
+                </p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Category
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Contact info
+                            </a>
+                        </li>
+                        
+                 </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Blog
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Popular news
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Recent news
+                            </a>
+                        </li>
+                        
+                 </div>
+
+
+                <div>
+                    <h3 class="footer__title">
+                        Contact us
+                    </h3>
+                    <ul class="footer__social">
+                      <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                      </a>
+                      <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                      </a>
+                        <a href="https://www.youtube.com/"target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="https://wa.link/"target="_blank" class="footer__social-link">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                        <a href="https://github.com/"target="_blank" class="footer__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/"target="_blank" class="footer__social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                      </ul>
+                 </div>
+            </div>
+        </div>
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    &#169; All rigths reserved
+                </span>
+
+                <a href="" class="footer__privacy">
+                    Terms & Conditions
+                </a>
+                
+            </div>
+            
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
